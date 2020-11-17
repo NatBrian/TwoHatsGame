@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TwoHats</string>
+    <string-array name="hat_colors">
+        <item>Red</item>
+        <item>Blue</item>
+    </string-array>
+</resources>

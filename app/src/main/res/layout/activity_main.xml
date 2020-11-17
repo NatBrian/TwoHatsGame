@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="323dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="32dp"
+        android:autoSizeMaxTextSize="45dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        android:text="Computer Make Guess"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="321dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:autoSizeMaxTextSize="20dp"
+        android:autoSizeMinTextSize="6dp"
+        android:autoSizeTextType="uniform"
+        android:text="You are a professional gambler. You approach two people who are walking on the road. You told them to play a game with you. \n\nThe game rules are: \n1) You will set up the color of each person's hat, either RED or BLUE. \n2) Each person cannot see the color of his hat, only can see the color of the other person. \n3) The two people will guess the color of their hats simultaneously. If at least one of the two is right, they both win $1000. If they lose, you will collect $1000 from each of them for a total of $2000. \n\nThe two people discussed with each other to win your money. They come up with a strategy that a specific one of them will always guess that their hat is the same color as the one they see on the other person, while the other person will always guess that their hat is the other color from the one they see on the first person.  \n\nThe game begins, set the hat colors of the two people so you can win your $2000!"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="317dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:autoSizeMaxTextSize="60dp"
+        android:autoSizeMinTextSize="20dp"
+        android:autoSizeTextType="uniform"
+        android:text="TWO HATS GUESSING GAME"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/figure1"
+        android:layout_width="40dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.514"
+        app:srcCompat="@drawable/person1" />
+
+    <ImageView
+        android:id="@+id/hat1"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/figure1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/red0" />
+
+    <Spinner
+        android:id="@+id/person1"
+        android:layout_width="126dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/hat1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/person2"
+        android:layout_width="126dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/hat2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/figure2"
+        android:layout_width="40dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.411"
+        app:srcCompat="@drawable/person2" />
+
+    <ImageView
+        android:id="@+id/hat2"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/figure2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/red0" />
+
+    <ImageView
+        android:id="@+id/bubble1"
+        android:layout_width="150dp"
+        android:layout_height="116dp"
+        app:layout_constraintBottom_toTopOf="@+id/bubble2"
+        app:layout_constraintStart_toEndOf="@+id/figure1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bubble1" />
+
+    <ImageView
+        android:id="@+id/bubble2"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toStartOf="@+id/figure2"
+        app:layout_constraintTop_toTopOf="@+id/figure2"
+        app:srcCompat="@drawable/bubble2" />
+
+    <TextView
+        android:id="@+id/guess1"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:autoSizeMaxTextSize="30dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        android:text="Hi!"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bubble1"
+        app:layout_constraintEnd_toEndOf="@+id/bubble1"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="@+id/bubble1"
+        app:layout_constraintTop_toTopOf="@+id/bubble1"
+        app:layout_constraintVertical_bias="0.366" />
+
+    <TextView
+        android:id="@+id/guess2"
+        android:layout_width="127dp"
+        android:layout_height="43dp"
+        android:autoSizeMaxTextSize="30dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        android:text="Hello!"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bubble2"
+        app:layout_constraintEnd_toEndOf="@+id/bubble2"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="@+id/bubble2"
+        app:layout_constraintTop_toTopOf="@+id/bubble2"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="311dp"
+        android:layout_height="32dp"
+        android:autoSizeMaxTextSize="30dp"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
